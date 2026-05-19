@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('./assets/logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+/* Background icons */
+.home::before {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  font-size: 60px;
+  opacity: 0.08;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  pointer-events: none;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+  color: #00e5ff;
+  text-shadow: 0 0 15px #00e5ff;
+}
+
+.overlay p {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #dfefff;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 10px;
+  background: #00e5ff;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+.buttons button:hover {
+  transform: scale(1.08);
+  background: #00bcd4;
+  box-shadow: 0 0 25px #00e5ff;
+}
+
+/* LOGIN & SIGNUP PAGES */
+
+.form-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #050816, #0a1931);
+}
+
+.form-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 20px #00e5ff;
+}
+
+.form-box h2 {
+  color: #00e5ff;
+  margin-bottom: 25px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #00e5ff;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00e5ff;
+  transition: 0.3s;
+}
+
+.form-box button:hover {
+  background: #00bcd4;
+  transform: scale(1.03);
+}
+
+.form-box p {
+  margin-top: 15px;
+  color: white;
+}
+
+.form-box a {
+  color: #00e5ff;
+  text-decoration: none;
+}
+.hero-text {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow:
+    0 0 10px #00e5ff,
+    0 0 20px #00e5ff,
+    0 0 40px #00e5ff;
+}
